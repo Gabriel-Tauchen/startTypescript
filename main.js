@@ -6,13 +6,38 @@ var userPrompt = promptSync();
 // const userName = userPrompt("Please, enter your name: ")
 // console.log(hello(userName))
 //////////////////////////////////////////
-var qtdText = userPrompt("A quantidade de notas que o aluno tem: ");
-var qtd = Number(qtdText);
-var soma = 0;
-for (var i = 0; i < qtd; i++) {
-    var nTexto = userPrompt("Nota ".concat(i, ": "));
-    var n = Number(nTexto);
-    soma += n;
-}
-var media = soma / qtd;
-console.log("A m\u00E9dia do aluno \u00E9: ".concat(media));
+// let qtdText = userPrompt("A quantidade de notas que o aluno tem: ");
+// let qtd: number = Number(qtdText);
+// let soma: number = 0;
+// for(let i=0;i<qtd;i++){
+//     let nTexto = userPrompt(`Nota ${i}: `);
+//     let n: number = Number(nTexto);
+//     soma += n;
+// }
+// let media: number = soma/qtd;
+// console.log(`A média do aluno é: ${media}`);
+//////////////////////////////////////////////////////////
+//teste tipos especiais
+// any
+// let valor: any = 10;
+// valor = "texto";
+// valor = true;
+// console.log("Valor (any):", valor);
+//unknown | as (casting)
+// let dado: unknown = "123";
+// // console.log(dado.toUpperCase()); // Erro
+// //as garante que é uma string
+// //fazendo conversão de tipo
+// let texto: string = dado as string;
+// console.log("Texto (unknown → string):",
+// texto.toUpperCase());
+// never
+// function erroFatal(mensagem: string): never{
+//     throw new Error(mensagem);
+// }
+// erroFatal("Sou muito bonito!");
+// undefined e null
+var indefinido = undefined;
+var nulo = null;
+console.log("Indefinido:", indefinido);
+console.log("Nulo:", nulo);
