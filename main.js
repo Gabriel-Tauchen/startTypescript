@@ -37,7 +37,33 @@ var userPrompt = promptSync();
 // }
 // erroFatal("Sou muito bonito!");
 // undefined e null
-var indefinido = undefined;
-var nulo = null;
-console.log("Indefinido:", indefinido);
-console.log("Nulo:", nulo);
+// let indefinido: undefined = undefined;
+// let nulo: null = null;
+// console.log("Indefinido:", indefinido);
+// console.log("Nulo:", nulo);
+///////////////////////////////////////////
+//tipos compostos
+//array
+// const names: string[] = [];
+// names.push("Dylan");
+// console.log(names);
+//tuple
+// let ourTuple: [number, boolean, string];
+// ourTuple = [5, false, 'jabuticaba'];
+// console.log(ourTuple);
+//objeto
+// const car:{type: string, model: string, year:
+//     number}={
+//     type: "Toyota",
+//     model: "Corolla",
+//     year: 2009
+//     };
+//     console.log(car);
+//enum
+// enum CorFavorita {Vermelho = "vermelho",Azul =
+//     "azul",}
+//     function mostrar(cor: CorFavorita) {
+//     console.log("Sua cor favorita é:", cor);
+//     }
+//     let minhaCor: CorFavorita = CorFavorita.Azul;
+//     mostrar(minhaCor);
