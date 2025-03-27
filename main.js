@@ -67,3 +67,34 @@ var userPrompt = promptSync();
 //     }
 //     let minhaCor: CorFavorita = CorFavorita.Azul;
 //     mostrar(minhaCor);
+//////////////////////////////////////////////////////////
+//Outros tipos
+//Alias tipo typedef em C
+// type Nome = string;
+// type Idade = number;
+// type Pessoa = {
+//     nome: Nome;
+//     idade: Idade;
+// };
+// const aluno: Pessoa = {
+//     nome: "Ana",
+//     idade: 22
+// };
+// console.log("Aluno:", aluno);
+//União tem mais de um tipo na variável
+// let valor: string | number;
+// valor = "Texto";
+// console.log("Valor:", valor);
+// valor = 123;
+// console.log("Valor:", valor);
+//Funções
+function soma(a, b) {
+    return a + b;
+}
+var resultado = soma(5, 3);
+console.log(resultado);
+//void
+function printHello() {
+    console.log('Hello!');
+}
+printHello();
